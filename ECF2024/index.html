@@ -4,22 +4,34 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>ZooParc d'Arcadia</title>
-        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="style.css">
     </head>
 
     <body>
         <!-- Start header  : Le bandeau de ma page et le menu-->
         <header>
-            <div class="bandeau">
+            <div class="bandeaucontact">
                 Des questions sur votre visite à Arcadia ? Contactez nous 
                 <button onclick="ouvrirFenetreContact()">ICI</button>.
             </div>
-        
-            <div style="padding: 80px;">
-                <h1>Bienvenue à Arcadia</h1>
-                <p>Contenu de la page...</p>
+            </div>
+            <div class="bandeau">
+                <img src="logo-zoo.png" alt="Logo du Zoo" class="logo">
+                <div class="nom-zoo">
+                    <h1>ZooParc d'Arcadia</h1>
+                </div>
             </div>
         </header>
         <!-- End header-->
+        <nav class="nav-tabs">
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="presentation.html">Présentation</a></li>
+                <li><a href="horaires.html">Horaires</a></li>
+                <li><a href="tarifs.html">Tarifs</a></li>
+                <li><a href="acces.html">Accès</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
     </body>
 </html>
