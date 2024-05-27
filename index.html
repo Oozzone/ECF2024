@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>ZooParc d'Arcadia</title>
+        <link rel="stylesheet" href="style.css">
+        <script>
+            function ouvrirFenetreContact() {
+                window.location.href = 'contact.html';
+            }
+        </script>
+    </head>
+
+    <body>
+        <!-- Start header  : Le bandeau de ma page et le menu-->
+        <header>
+            <div class="bandeaucontact">
+                Des questions sur votre visite à Arcadia ? Contactez nous 
+                <button onclick="ouvrirFenetreContact()">ICI</button>.
+            </div>
+            <div class="bandeau">
+                <div class="nom-zoo">
+                    <h1>ZooParc d'Arcadia</h1>
+                </div>
+            </div>
+        </header>
+        <!-- End header-->
+        <!-- Start nav : Le menu de navigation sous la bannière du zoo-->
+        <nav class="nav-tabs">
+            <ul>
+                <li><a href="index.html">Accueil</a></li>
+                <li><a href="section1">Présentation</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="habitats.html">Habitats</a></li>
+                <li><a href="animaux.html">Animaux</a></li>
+            </ul>
+        </nav>
+        <!-- End nav-->
+        <main>
+            <!-- Start main : Le contenu principal de la page-->    
+            <!-- Start section1 : La section de présentation du zoo-->
+            <h2 class="sous-titre" id="section1">Bienvenue au ZooParc d'Arcadia</h2>
+            <p class = introduction>
+                Le ZooParc d'Arcadia, fondé en 1960, s'est établi comme un lieu incontournable pour les amoureux de la nature et les passionnés de vie sauvage. Niché près de la mystique forêt de Brocéliande, au cœur de la Bretagne en Ille-et-Vilaine, ce parc zoologique accueille petits et grands dans un cadre naturel exceptionnel depuis des décennies.
+                Notre engagement envers l'écoresponsabilité est au cœur de notre mission. Nous nous efforçons constamment de minimiser notre impact sur l'environnement et de promouvoir la conservation de la biodiversité. Grâce à des initiatives innovantes en matière de développement durable, nous avons créé un écosystème où la nature prospère et où les animaux sont choyés et heureux.
+                Au ZooParc d'Arcadia, les visiteurs peuvent découvrir un monde sauvage fascinant, où chaque habitat est soigneusement conçu pour offrir aux animaux un environnement proche de leur habitat naturel. De la majestueuse savane africaine à la luxuriante jungle amazonienne, nos espaces reproduisent fidèlement les écosystèmes du monde entier.
+                Nous croyons fermement en l'importance de sensibiliser nos visiteurs à la préservation de la vie sauvage et à la protection de notre planète. Chaque rencontre avec nos résidents à fourrure, plumes ou écailles est une occasion d'apprendre et de s'inspirer de la beauté et de la diversité de la nature.
+                Rejoignez-nous pour une aventure inoubliable au ZooParc d'Arcadia, où la magie de la vie sauvage rencontre l'engagement envers un avenir durable.
+            </p>
+            <!-- End section1 : présentation du zoo-->
+            <!--Présentation des habitats du zoo-->
+            <h2 class="sous-titre">Découvrez nos habitats  </h2>
+                <div class="photo-grid">
+                    <a href="habitat1.html">
+                        <h3 class="titre-photo">Habitat Savane</h3>
+                        <img src="Assets/habitat-savane.jpg" alt="habitat Savane">
+                    </a>
+                    <a href="habitat2.html">
+                        <h3 class="titre-photo">Habitat Forêt</h3>
+                        <img src="Assets/forest-nature-habitat.jpg" alt="habitat Foret">
+                    </a>
+                    <a href="habitat3.html">
+                        <h3 class="titre-photo">Habitat Marais</h3>
+                        <img src="Assets/habitat-marais.jpg" alt="habitat Marais">
+                    </a>
+                    <a href="habitat4.html">
+                        <h3 class="titre-photo">Habitat Jungle</h3>
+                        <img src="Assets/habitat-jungle.jpg" alt="habitat-jungle">
+                    </a>
+                </div>
+            <!-- Fin de la présentation des habitats  du zoo-->
+            <h2 class="sous-titre"> Découvrez nos services</h2>
+            <p class="introduction">
+                Le ZooParc d'Arcadia vous propose de nombreux services pour rendre votre visite inoubliable.
+                Découvrez nos services et réservez dès maintenant pour profiter pleinement de votre journée à Arcadia.
+            </p>
+
+        </main>
+    </body>
+</html>

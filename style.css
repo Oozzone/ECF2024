@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+/*  Style général application WEB */
+
+:root {
+    --Roboto: 'Roboto', sans-serif;
+
+}
+body {
+    margin: 0;
+    height: max-content;
+    font-family: var(--Roboto);
+}
+
+/*  Style bandeau de présentation du site */
+
+.bandeaucontact {
+    background-color: #f8f8f8;
+    padding: 5px;
+    text-align: center;
+    font-size: 1rem;
+    border-bottom: 1px solid #ddd;
+    height : 20px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.bandeau {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px;
+    background-image: url('Assets/zoo.jpg');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    height: 600px;
+    }
+
+.bandeau::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); 
+}
+
+.nom-zoo {
+    flex: 1;
+    color: white;
+    text-align: right;
+    padding-right: 20px;
+    z-index: 1;
+}
+
+.nom-zoo h1 {
+    font-size: 4rem; 
+    margin: 0;
+    z-index: 1;
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 0px 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #0056b3;
+    text-decoration: underline;
+}
+
+/*  Style menu de navigation */
+
+.nav-tabs {
+    background-color: #333;
+    overflow: hidden;
+    position: relative;
+    top: 0;
+    width: 100%;
+    z-index: 999; 
+}
+
+.nav-tabs ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-tabs li {
+    display: inline;
+}
+
+.nav-tabs a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+.nav-tabs a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+
+/*  Styles des habitats du zoo */
+
+.photo-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin: 20px;
+}
+.photo-grid a {
+    display: block;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: transform 0.2s ease;
+}
+.photo-grid a:hover {
+    transform: scale(1.05);
+    border-color: #aaa;
+}
+.photo-grid img {
+    width: 100%;
+    max-height: 600px;
+    height: auto;
+    display: block;
+}
+
+.titre-photo {
+    text-align: center; 
+    margin-bottom: 5px; 
+    font-size: medium;
+    color: #333; /* Change la couleur du texte */
+    font-weight: bold; /* Rend le texte en gras */
+    text-decoration: none; /* Supprime la décoration de lien */
+    display: block; /* Affiche les titres comme des blocs pour les centrer correctement */
+
+}
+
+.sous-titre {
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 20px;
+    text-decoration: underline;
+}
+
+.introduction {
+    margin: 20px;
+    text-align: justify;
+}
+
+@media only screen and (max-width: 768px) {
+    .nav-tabs ul {
+        flex-direction: column;
+    }
+}
