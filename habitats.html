@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Habitats du zoo</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="CSS/habitats.css">
+    <script> src="index.js"></script>
+</head>
+<body>
+    <header>
+        <div class="bandeaucontact">
+            Des questions sur votre visite à Arcadia ? Contactez nous 
+            <button onclick="ouvrirFenetreContact()">ICI</button>.
+        </div>
+        <div class="headband">
+            <div class="nom-zoo">
+                <h1>ZooParc d'Arcadia</h1>
+            </div>
+        </div>
+    </header>
+    <!-- End header-->
+    <!-- Start nav : Le menu de navigation sous la bannière du zoo-->
+    <nav class="nav-tabs">
+        <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="section1">Présentation</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="habitats.html">Habitats</a></li>
+            <li><a href="connexion.html">Connexion</a></li>
+        </ul>
+    </nav>
+    <!-- End nav-->
+    <h2>Découvrez nos habitats</h2>
+    <div class="photo-grid">
+        <div class="habitat" id="forêt">
+            <h3 class="titre-photo">Habitat Forêt</h3>
+            <img src="Assets/forest-nature-habitat.jpg" alt="habitat Foret">
+            <ul class="animals" style="display: none;">
+                <li>Cerf</li>
+                <li>Renard</li>
+                <li>Loup</li>
+            </ul>
+        </div>
+        <div class="habitat" id="savane">
+            <h3 class="titre-photo">Habitat Savane</h3>
+            <img src="Assets/habitat-savane.jpg" alt="habitat Savane">
+            <ul class="animals" style="display: none;">
+                <li>Girafe</li>
+                <li>Scorpion</li>
+                <li>Rhinocéros</li>
+            </ul>
+        </div>
+        <div class="habitat" id="marais">
+            <h3 class="titre-photo">Habitat Marais</h3>
+            <img src="Assets/habitat-marais.jpg" alt="habitat Marais">
+            <ul class="animals" style="display: none;">
+                <li>Grenouille</li>
+                <li>Héron</li>
+                <li>Carpe</li>
+            </ul>
+        </div>
+        <div class="habitat" id="jungle">
+            <h3 class="titre-photo">Habitat Jungle</h3>
+            <img src="Assets/habitat-jungle.jpg" alt="habitat jungle">
+            <ul class="animals" style="display: none;">
+                <li>Jaguar</li>
+                <li>Serpents</li>
+                <li>Tapir</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

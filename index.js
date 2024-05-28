@@ -58,3 +58,56 @@ document.getElementById('reviewForm').addEventListener('submit', function(event)
     // Réinitialiser le formulaire
     document.getElementById('reviewForm').reset();
 });
+
+// Fermeture de la fenêtre de contact après l'envoie du formulaire
+
+document.getElementById('contactForm').addEventListener('submit', function(event) {
+    event.preventDefault(); // Empêche l'envoi du formulaire standard
+
+    const formData = new FormData(this);
+
+    fetch('/submit_form', {
+        method: 'POST',
+        body: formData
+    })
+    .then(response => {
+        if (response.ok) {
+            window.location.href = 'index.html'; // Redirige vers la page d'accueil
+        } else {
+            alert('Une erreur est survenue. Veuillez réessayer.');
+        }
+    })
+    .catch(error => {
+        console.error('Erreur:', error);
+        alert('Une erreur est survenue. Veuillez réessayer.');
+    });
+});
+
+// Path: contact.html
+
+document.getElementById('login-form').addEventListener('submit', function(event) {
+    event.preventDefault(); // Empêche la soumission du formulaire par défaut
+
+    const username = document.getElementById('username').value;
+    const password = document.getElementById('password').value;
+
+    // Logique de vérification des identifiants
+    if (username === 'utilisateur' && password === 'motdepasse') {
+        alert('Connexion réussie');
+        // Redirection ou autres actions après la connexion réussie
+    } else {
+        alert('Nom d\'utilisateur ou mot de passe incorrect');
+    }
+});
+
+// habitats.html
+document.addEventListener("DOMContentLoaded", function() {
+    const habitats = document.querySelectorAll('.habitat');
+    
+    habitats.forEach(habitat => {
+        habitat.addEventListener('click', function() {
+            const animalsList = habitat.querySelector('.animals');
+            animalsList.classList.toggle('hidden');
+        });
+    });
+});
